@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advocate Sumit Birthday ❤️⚖️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+background:linear-gradient(135deg,#ff4da6,#ff85c2,#ffc0cb);
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+position:relative;
+}
+
+.page{
+display:none;
+width:90%;
+max-width:750px;
+padding:40px;
+border-radius:30px;
+text-align:center;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+box-shadow:0 0 35px rgba(255,255,255,0.4);
+animation:fade 1s ease;
+}
+
+.active{
+display:block;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(0.9);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+h1{
+font-size:3rem;
+margin-bottom:15px;
+text-shadow:0 0 15px white;
+}
+
+h2{
+margin-top:20px;
+color:#fff5f8;
+}
+
+p{
+margin-top:18px;
+font-size:1.15rem;
+line-height:1.8;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 28px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.yes{
+background:white;
+color:#ff1493;
+}
+
+.yes:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px white;
+}
+
+.no{
+background:#ffb6d9;
+color:white;
+cursor:not-allowed;
+opacity:0.5;
+}
+
+.heart{
+position:absolute;
+bottom:-10px;
+font-size:25px;
+animation:float 6s linear infinite;
+opacity:0.7;
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+100%{
+transform:translateY(-110vh);
+opacity:1;
+}
+}
+
+.glitter{
+position:absolute;
+width:5px;
+height:5px;
+background:white;
+border-radius:50%;
+animation:sparkle 2s infinite;
+}
+
+@keyframes sparkle{
+0%{
+opacity:0;
+transform:scale(0);
+}
+50%{
+opacity:1;
+transform:scale(1);
+}
+100%{
+opacity:0;
+transform:scale(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Advocate Sumit ⚖️❤️</h2>
+
+<p>
+Happy Birthday to the only advocate who can easily win arguments…
+and my attention too 😌⚖️❤️
+</p>
+
+<p>
+To my favorite advocate —
+if charm was a court case,
+you’d win every single hearing without evidence 😌⚖️
+</p>
+
+<p>
+“You defend clients in court…
+but who’s going to defend me from your smile?” 😌⚖️❤️
+</p>
+
+<p>
+“Objection your honor…
+he’s illegally attractive 🫣⚖️”
+</p>
+
+<button class="btn yes" onclick="nextPage(2)">
+Open Your Birthday Case File 💌
+</button>
+
+</div>
+
+
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+
+<h1>⚖️ Special Hearing ⚖️</h1>
+
+<p>
+“If loving your attention was a crime,
+I’d happily confess 😌❤️”
+</p>
+
+<p>
+“You don’t just win court cases…
+you quietly win hearts too ⚖️✨”
+</p>
+
+<p>
+“Your arguments are strong…
+but your charm is stronger 😌⚖️”
+</p>
+
+<p>
+“I think you cross-examined my heart without permission ❤️”
+</p>
+
+<p>
+⚖️ Advocate Sumit —
+professionally dangerous in court
+and personally dangerous to my focus 😭❤️
+</p>
+
+<button class="btn yes" onclick="nextPage(3)">
+Continue ❤️
+</button>
+
+</div>
+
+
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+
+<h1>💖 Important Question 💖</h1>
+
+<p style="font-size:1.5rem;">
+Would you like to spend your precious time with me...? 😌❤️
+</p>
+
+<button class="btn yes" onclick="nextPage(4)">
+YES ❤️
+</button>
+
+<button class="btn no">
+NO ❌
+</button>
+
+</div>
+
+
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+
+<h1>🥹❤️ Final Verdict ❤️</h1>
+
+<p style="font-size:1.4rem;">
+I knew your answer would be YES 😌⚖️
+</p>
+
+<p>
+⚖️ Happy Birthday to the man who can win every case with logic…
+and steal hearts without even trying 😌❤️
+</p>
+
+<p>
+❤️ Some people argue to win cases…
+you just smile and automatically win people 😌⚖️
+</p>
+
+<p>
+⚖️ If birthdays were court hearings,
+today’s judgment is officially in your favor 😌✨
+</p>
+
+<p>
+❤️ Even the strongest arguments lose against your smile ⚖️✨
+</p>
+
+<p>
+🎂 Wishing the most elegant advocate endless happiness,
+success and beautiful memories ❤️✨
+</p>
+
+<h2>
+Happy Birthday Again Advocate Sumit ⚖️❤️
+</h2>
+
+</div>
+
+
+
+<script>
+
+function nextPage(page){
+document.querySelectorAll('.page').forEach(p=>{
+p.classList.remove('active');
+});
+
+document.getElementById('page'+page).classList.add('active');
+}
+
+function createHeart(){
+const heart=document.createElement('div');
+
+heart.classList.add('heart');
+heart.innerHTML='❤️';
+
+heart.style.left=Math.random()*100+'vw';
+heart.style.animationDuration=(Math.random()*3+3)+'s';
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+}
+
+setInterval(createHeart,300);
+
+function createGlitter(){
+const glitter=document.createElement('div');
+
+glitter.classList.add('glitter');
+
+glitter.style.left=Math.random()*100+'vw';
+glitter.style.top=Math.random()*100+'vh';
+
+document.body.appendChild(glitter);
+
+setTimeout(()=>{
+glitter.remove();
+},2000);
+}
+
+setInterval(createGlitter,150);
+
+</script>
+
+</body>
+</html>
