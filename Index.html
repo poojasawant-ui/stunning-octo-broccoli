@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Verdict For Advocate Sumit ❤️⚖️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff66b2,#ff99cc,#ffd6e7);
+color:white;
+position:relative;
+}
+
+.container{
+width:90%;
+max-width:750px;
+padding:40px;
+border-radius:30px;
+background:rgba(255,255,255,0.18);
+backdrop-filter:blur(15px);
+box-shadow:0 0 30px rgba(255,255,255,0.5);
+text-align:center;
+animation:fade 1s ease;
+}
+
+.page{
+display:none;
+}
+
+.active{
+display:block;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(0.9);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+text-shadow:0 0 10px white;
+}
+
+h2{
+margin-top:20px;
+font-size:2rem;
+}
+
+p{
+font-size:1.15rem;
+line-height:1.8;
+margin-top:15px;
+}
+
+button{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:50px;
+font-size:1rem;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.yes{
+background:white;
+color:#ff1493;
+}
+
+.yes:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px white;
+}
+
+.no{
+background:#ffb3d9;
+color:white;
+cursor:not-allowed;
+opacity:0.5;
+}
+
+.heart{
+position:absolute;
+font-size:25px;
+animation:float 6s linear infinite;
+opacity:0.8;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+100%{
+transform:translateY(-10vh);
+opacity:1;
+}
+}
+
+.sparkle{
+position:absolute;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+animation:spark 2s linear infinite;
+}
+
+@keyframes spark{
+0%{
+opacity:0;
+transform:scale(0);
+}
+50%{
+opacity:1;
+transform:scale(1.5);
+}
+100%{
+opacity:0;
+transform:scale(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="page1">
+
+<h1>🎂 Happy Birthday 🎂</h1>
+
+<h2>Advocate Sumit ⚖️❤️</h2>
+
+<p>
+Happy Birthday to the only advocate who can easily win arguments…
+and my attention too 😌⚖️❤️
+</p>
+
+<p>
+If charm was a court case,
+you’d win every single hearing without evidence 😌⚖️
+</p>
+
+<p>
+You defend clients in court…
+but who’s going to defend me from your smile? ❤️
+</p>
+
+<button class="yes" onclick="showPage(2)">
+Open Secret Birthday Evidence 💌
+</button>
+
+</div>
+
+
+<!-- PAGE 2 -->
+
+<div class="page" id="page2">
+
+<h1>⚖️ Confidential Statement ⚖️</h1>
+
+<p>
+Objection your honor…
+he’s illegally attractive 🫣⚖️
+</p>
+
+<p>
+Your arguments are strong…
+but your charm is stronger 😌❤️
+</p>
+
+<p>
+You don’t just win court cases…
+you quietly win hearts too ⚖️✨
+</p>
+
+<p>
+I think you cross-examined my heart without permission ❤️
+</p>
+
+<button class="yes" onclick="showPage(3)">
+Continue Hearing ✨
+</button>
+
+</div>
+
+
+<!-- PAGE 3 -->
+
+<div class="page" id="page3">
+
+<h1>💖 Final Question 💖</h1>
+
+<p style="font-size:1.4rem;">
+Would you like to spend your precious time with me...? 😌❤️
+</p>
+
+<button class="yes" onclick="showPage(4)">
+YES ❤️
+</button>
+
+<button class="no">
+NO ❌
+</button>
+
+</div>
+
+
+<!-- PAGE 4 -->
+
+<div class="page" id="page4">
+
+<h1>🥹❤️ Final Verdict ❤️</h1>
+
+<p>
+I knew your final answer would be YES 😌⚖️
+</p>
+
+<p>
+⚖️ Happy Birthday to the man who can win every case with logic…
+and steal hearts without even trying ❤️
+</p>
+
+<p>
+Some people argue to win cases…
+you just smile and automatically win people 😌⚖️
+</p>
+
+<p>
+Your personality deserves lifetime bail
+from being this attractive 😭❤️
+</p>
+
+<p>
+Even the strongest arguments lose against your smile ⚖️✨
+</p>
+
+<h2>
+Happy Birthday Again Advocate Sumit ❤️⚖️
+</h2>
+
+</div>
+
+</div>
+
+<script>
+
+function showPage(pageNumber){
+
+document.querySelectorAll('.page').forEach(page=>{
+page.classList.remove('active');
+});
+
+document.getElementById('page'+pageNumber).classList.add('active');
+
+}
+
+function createHeart(){
+
+const heart=document.createElement('div');
+
+heart.classList.add('heart');
+
+heart.innerHTML='❤️';
+
+heart.style.left=Math.random()*100+'vw';
+
+heart.style.animationDuration=(Math.random()*3+3)+'s';
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+}
+
+setInterval(createHeart,300);
+
+function createSparkle(){
+
+const sparkle=document.createElement('div');
+
+sparkle.classList.add('sparkle');
+
+sparkle.style.left=Math.random()*100+'vw';
+
+sparkle.style.top=Math.random()*100+'vh';
+
+document.body.appendChild(sparkle);
+
+setTimeout(()=>{
+sparkle.remove();
+},2000);
+
+}
+
+setInterval(createSparkle,150);
+
+</script>
+
+</body>
+  </html>
